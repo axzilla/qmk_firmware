@@ -18,6 +18,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+// sets the number of milliseconds to pause after sending a wakeup packet.
+// Disabled by default, you might want to set this to 200 (or higher) if the keyboard does not wake up properly after suspending.
+#define USB_SUSPEND_WAKEUP_DELAY 200 //  INFO: Because of the deep sleep "bug"
+
 #pragma once
 
 //#define USE_MATRIX_I2C
